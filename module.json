@@ -26,15 +26,23 @@
   },
   "relationships": {
     "systems": [
-      {
-        "id": "pf2e",
-        "type": "system",
-        "manifest": "https://github.com/foundryvtt/pf2e/releases/latest/download/system.json",
-        "compatibility": {
-          "minimum": "4.0.6"
-        }
-      }
-    ],
+            {
+                "id": "pf2e",
+                "type": "system",
+                "manifest": "https://raw.githubusercontent.com/foundryvtt/pf2e/master/system.json",
+                "compatibility": {
+                    "minimum": "7.7.0"
+                }
+            }
+        ],
+        "requires": [
+          {
+            "id":"lib-wrapper",
+            "type":"module",
+            "manifest":"https://raw.githubusercontent.com/ruipin/fvtt-lib-wrapper/master/module.json"
+          }
+        ]
+  },
     "packFolders": [
       {
         "name": "00 - Força de Milhares",
@@ -151,8 +159,7 @@
           "musicas-sons"
         ]
       }
-    ]
-  },
+    ],
   "packs": [
     {
       "name": "itens-arsenal",
