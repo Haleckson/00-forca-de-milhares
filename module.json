@@ -1,7 +1,7 @@
 {
   "id": "00-forca-de-milhares",
   "title": "00 - Força de Milhares",
-  "version": "0.0.1",
+  "version": "0.1",
   "compatibility": {
     "minimum": "13",
     "verified": "13"
@@ -10,40 +10,336 @@
     "init.js"
   ],
   "url": "https://github.com/Haleckson/00-forca-de-milhares",
-  "manifest": "",
-  "download": "",
+  "manifest": "https://github.com/Haleckson/00-forca-de-milhares/releases/download/0.1/module.json",
+  "download": "https://github.com/Haleckson/00-forca-de-milhares/releases/download/0.1/00-forca-de-milhares.zip",
   "description": "<p>Um módulo para unificar e organizar os compendiuns que utilizaremos na campanha de Pathfinder 2e, Força de Milhares.</p>",
   "authors": [
     {
       "name": "Haleckson",
       "email": "henrick_cc@hotmail.com",
+      "discord": "@haleckson",
       "flags": {}
     }
   ],
   "flags": {
     "canUpload": true
   },
-  "packs": [
-    {
-      "name": "pack-1",
-      "label": "aaaaa",
-      "path": "packs/pack-1",
-      "type": "JournalEntry",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      },
-      "system": "pf2e",
-      "flags": {}
-    }
-  ],
   "relationships": {
     "systems": [
       {
         "id": "pf2e",
         "type": "system",
-        "compatibility": {}
+        "manifest": "https://github.com/foundryvtt/pf2e/releases/latest/download/system.json",
+        "compatibility": {
+          "minimum": "4.0.6"
+        }
+      }
+    ],
+    "packFolders": [
+      {
+        "name": "00 - Força de Milhares",
+        "sorting": "m",
+        "ownership": {
+          "PLAYER": "OBSERVER",
+          "ASSISTANT": "OWNER"
+        },
+        "packs": [
+          "atores-adversarios",
+          "atores-npcs",
+          "atores-npcs-jornais",
+          "atores-npcs-macros",
+          "feats-talentos-e-acoes",
+          "feats-talentos-homebrew",
+          "itens-arsenal",
+          "itens-consumiveis",
+          "itens-diversos",
+          "itens-loot-da-campanha",
+          "magias-feiticos",
+          "magias-efeitos-de-feiticos",
+          "mapas-cenas",
+          "mapas-notas",
+          "mapas-macros",
+          "musicas-sons",
+          "notas-diversas"
+        ]
+      },
+      {
+        "name": "00 - Força de Milhares / Atores",
+        "sorting": "m",
+        "ownership": {
+          "PLAYER": "OBSERVER",
+          "ASSISTANT": "OWNER"
+        },
+        "packs": [
+          "atores-adversarios",
+          "atores-npcs",
+          "atores-npcs-jornais",
+          "atores-npcs-macros"
+        ]
+      },
+      {
+        "name": "00 - Força de Milhares / Itens",
+        "sorting": "m",
+        "ownership": {
+          "PLAYER": "OBSERVER",
+          "ASSISTANT": "OWNER"
+        },
+        "packs": [
+          "itens-arsenal",
+          "itens-consumiveis",
+          "itens-diversos",
+          "itens-loot-da-campanha"
+        ]
+      },
+      {
+        "name": "00 - Força de Milhares / Magias",
+        "sorting": "m",
+        "ownership": {
+          "PLAYER": "OBSERVER",
+          "ASSISTANT": "OWNER"
+        },
+        "packs": [
+          "magias-feiticos",
+          "magias-efeitos-de-feiticos"
+        ]
+      },
+      {
+        "name": "00 - Força de Milhares / Talentos e Ações",
+        "sorting": "m",
+        "ownership": {
+          "PLAYER": "OBSERVER",
+          "ASSISTANT": "OWNER"
+        },
+        "packs": [
+          "feats-talentos-e-acoes",
+          "feats-talentos-homebrew"
+        ]
+      },
+      {
+        "name": "00 - Força de Milhares / Mapas",
+        "sorting": "m",
+        "ownership": {
+          "PLAYER": "OBSERVER",
+          "ASSISTANT": "OWNER"
+        },
+        "packs": [
+          "mapas-cenas",
+          "mapas-notas",
+          "mapas-macros"
+        ]
+      },
+      {
+        "name": "00 - Força de Milhares / Notas",
+        "sorting": "m",
+        "ownership": {
+          "PLAYER": "OBSERVER",
+          "ASSISTANT": "OWNER"
+        },
+        "packs": [
+          "notas-diversas",
+          "atores-npcs-jornais"
+        ]
+      },
+      {
+        "name": "00 - Força de Milhares / Músicas e Sons",
+        "sorting": "m",
+        "ownership": {
+          "PLAYER": "OBSERVER",
+          "ASSISTANT": "OWNER"
+        },
+        "packs": [
+          "musicas-sons"
+        ]
       }
     ]
-  }
+  },
+  "packs": [
+    {
+      "name": "itens-arsenal",
+      "label": "Itens - Arsenal",
+      "path": "packs/itens-arsenal",
+      "type": "Item",
+      "system": "pf2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "itens-consumiveis",
+      "label": "Itens - Consumíveis",
+      "path": "packs/itens-consumiveis",
+      "type": "Item",
+      "system": "pf2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "itens-diversos",
+      "label": "Itens - Diversos",
+      "path": "packs/itens-diversos",
+      "type": "Item",
+      "system": "pf2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "itens-loot-da-campanha",
+      "label": "Itens - Loot da Campanha",
+      "path": "packs/itens-loot-da-campanha",
+      "type": "Item",
+      "system": "pf2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "magias-feiticos",
+      "label": "Magias - Feitiços",
+      "path": "packs/magias-feiticos",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "pf2e"
+    },
+    {
+      "name": "magias-efeitos-de-feiticos",
+      "label": "Magias - Efeitos de Feitiços",
+      "path": "packs/magias-efeitos-de-feiticos",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "pf2e"
+    },
+    {
+      "name": "feats-talentos-e-acoes",
+      "label": "Talentos e Ações",
+      "path": "packs/feats-talentos-e-acoes",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "pf2e"
+    },
+    {
+      "name": "feats-talentos-homebrew",
+      "label": "Talentos Homebrew",
+      "path": "packs/feats-talentos-homebrew",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "pf2e"
+    },
+    {
+      "name": "atores-adversarios",
+      "label": "Atores - Adversários",
+      "path": "packs/atores-adversarios",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "pf2e"
+    },
+    {
+      "name": "atores-npcs",
+      "label": "Atores - NPC's Token",
+      "path": "packs/atores-npcs",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "pf2e"
+    },
+    {
+      "name": "atores-npcs-jornais",
+      "label": "Atores - NPC's Jornais",
+      "path": "packs/atores-npcs-jornais",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "pf2e"
+    },
+    {
+      "name": "atores-npcs-macros",
+      "label": "Atores - NPC's Macros",
+      "path": "packs/atores-npcs-macros",
+      "type": "Macro",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "pf2e"
+    },
+    {
+      "name": "mapas-cenas",
+      "label": "Mapas - Cenas",
+      "path": "packs/mapas-cenas",
+      "type": "Scene",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "pf2e"
+    },
+    {
+      "name": "mapas-notas",
+      "label": "Mapas - Notas",
+      "path": "packs/mapas-notas",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "pf2e"
+    },
+    {
+      "name": "mapas-macros",
+      "label": "Mapas - Macros",
+      "path": "packs/mapas-macros",
+      "type": "Macro",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "pf2e"
+    },
+    {
+      "name": "notas-diversas",
+      "label": "Notas Diversas",
+      "path": "packs/notas-diversas",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "pf2e"
+    },
+    {
+      "name": "musicas-sons",
+      "label": "Musicas e Sons",
+      "path": "packs/musicas-sons",
+      "type": "Playlist",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "pf2e"
+    }
+  ]
 }
