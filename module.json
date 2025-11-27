@@ -1,0 +1,49 @@
+{
+  "id": "00-forca-de-milhares",
+  "title": "00 - Força de Milhares",
+  "version": "0.0.1",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "scripts": [
+    "init.js"
+  ],
+  "url": "https://github.com/Haleckson/00-forca-de-milhares",
+  "manifest": "",
+  "download": "",
+  "description": "<p>Um módulo para unificar e organizar os compendiuns que utilizaremos na campanha de Pathfinder 2e, Força de Milhares.</p>",
+  "authors": [
+    {
+      "name": "Haleckson",
+      "email": "henrick_cc@hotmail.com",
+      "flags": {}
+    }
+  ],
+  "flags": {
+    "canUpload": true
+  },
+  "packs": [
+    {
+      "name": "pack-1",
+      "label": "aaaaa",
+      "path": "packs/pack-1",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "pf2e",
+      "flags": {}
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "pf2e",
+        "type": "system",
+        "compatibility": {}
+      }
+    ]
+  }
+}
